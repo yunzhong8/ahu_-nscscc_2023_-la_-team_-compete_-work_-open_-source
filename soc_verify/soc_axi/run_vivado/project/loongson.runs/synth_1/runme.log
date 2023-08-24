@@ -1,0 +1,2111 @@
+
+*** Running vivado
+    with args -log soc_lite_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_lite_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source soc_lite_top.tcl -notrace
+Command: synth_design -top soc_lite_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2704188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1898.883 ; gain = 200.688 ; free physical = 7304 ; free virtual = 35300
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_lite_top' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/soc_lite_top.v:67]
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'clk_pll' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/clk_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_top' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/mycpu_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mycpu_cache_top' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/mycpu_cache_top.v:23]
+	Parameter RIDLE bound to: 8'b00000000 
+	Parameter READ bound to: 8'b00000001 
+	Parameter LOOKUP bound to: 8'b00000010 
+	Parameter WRITE bound to: 8'b00000100 
+	Parameter MISS bound to: 8'b00001000 
+	Parameter WRITEBACK bound to: 8'b00010000 
+	Parameter REPLACE bound to: 8'b00100000 
+	Parameter REFILL bound to: 8'b01000000 
+	Parameter WRITEBLOCK bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'Loog' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Loog.v:16]
+INFO: [Synth 8-6157] synthesizing module 'Error' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Error.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'Error' (2#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Error.v:27]
+INFO: [Synth 8-6157] synthesizing module 'PreifReg' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/PreifReg.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'PreifReg' (3#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/PreifReg.v:16]
+INFO: [Synth 8-6157] synthesizing module 'PreIF' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/PreIF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PreIF' (4#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/PreIF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Predactor' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Predactor_Pht' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor_Pht.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pht_ram' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/pht_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'pht_ram' (5#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/pht_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Predactor_Pht' (6#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor_Pht.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Predactor_Btb' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor_Btb.v:25]
+INFO: [Synth 8-6157] synthesizing module 'btb_ram' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/btb_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'btb_ram' (7#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/btb_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Predactor_Btb' (8#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor_Btb.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Predactor' (9#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Predactor_PUC' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor_PUC.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Predactor_PUC' (10#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Predactor_PUC.v:17]
+INFO: [Synth 8-6157] synthesizing module 'IfStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Preif_IF' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Preif_IF.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'Preif_IF' (11#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Preif_IF.v:16]
+INFO: [Synth 8-6157] synthesizing module 'IF' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IF.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (12#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IF.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'IfStage' (13#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'IfTStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Cdo' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Cdo.v:27]
+INFO: [Synth 8-6157] synthesizing module 'CdoSq' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CdoSq.v:28]
+	Parameter Reset bound to: 2'b00 
+	Parameter Clear1 bound to: 2'b01 
+	Parameter Clear2 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'CdoSq' (14#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CdoSq.v:28]
+INFO: [Synth 8-6157] synthesizing module 'CdoCb' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CdoCb.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'CdoCb' (15#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CdoCb.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'Cdo' (16#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Cdo.v:27]
+INFO: [Synth 8-6157] synthesizing module 'IfTSq' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTSq.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'IfTSq' (17#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTSq.v:16]
+INFO: [Synth 8-6157] synthesizing module 'IfTCb' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTCb.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'IfTCb' (18#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTCb.v:39]
+WARNING: [Synth 8-7023] instance 'IfTCb_item1' of module 'IfTCb' has 17 connections declared, but only 16 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTStage.v:252]
+INFO: [Synth 8-6155] done synthesizing module 'IfTStage' (19#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IfTStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'IdStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'IdSq' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdSq.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'IdSq' (20#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdSq.v:16]
+INFO: [Synth 8-6157] synthesizing module 'IdCb' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdCb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'SignProduce' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/SignProduce.v:16]
+INFO: [Synth 8-6157] synthesizing module 'OpDecoder' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/OpDecoder.v:18]
+INFO: [Synth 8-6157] synthesizing module 'decoder_6_64' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_6_64' (21#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:40]
+INFO: [Synth 8-6157] synthesizing module 'decoder_4_16' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_4_16' (22#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:14]
+INFO: [Synth 8-6157] synthesizing module 'decoder_2_4' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_2_4' (23#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder_5_32' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_5_32' (24#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tools.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'OpDecoder' (25#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/OpDecoder.v:18]
+INFO: [Synth 8-6157] synthesizing module 'IndetifyInstType' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IndetifyInstType.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'IndetifyInstType' (26#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IndetifyInstType.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'SignProduce' (27#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/SignProduce.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'IdCb' (28#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdCb.v:39]
+WARNING: [Synth 8-7023] instance 'IdCb_item2' of module 'IdCb' has 11 connections declared, but only 10 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdStage.v:161]
+INFO: [Synth 8-6155] done synthesizing module 'IdStage' (29#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IdStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Data_Relevant' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Data_Relevant.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Relevant' (30#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Data_Relevant.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Lanuch' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Lanuch.v:21]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IF_ID.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (31#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/IF_ID.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ID' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ID.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (32#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ID.v:51]
+WARNING: [Synth 8-7023] instance 'IDI2' of module 'ID' has 14 connections declared, but only 13 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Lanuch.v:219]
+INFO: [Synth 8-6155] done synthesizing module 'Lanuch' (33#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Lanuch.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File_Box' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Reg_File_Box.v:16]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Reg_File.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (34#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Reg_File.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Csr' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Csr.v:29]
+WARNING: [Synth 8-6014] Unused sequential element pgd_reg_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Csr.v:1024]
+INFO: [Synth 8-6155] done synthesizing module 'Csr' (35#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Csr.v:29]
+INFO: [Synth 8-6157] synthesizing module 'CountReg' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CountReg.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'CountReg' (36#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CountReg.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File_Box' (37#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Reg_File_Box.v:16]
+INFO: [Synth 8-6157] synthesizing module 'ExStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ExStage.v:18]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ID_EX.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (38#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ID_EX.v:16]
+INFO: [Synth 8-6157] synthesizing module 'EX' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/EX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Arith_Logic_Unit' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Arith_Logic_Unit.v:17]
+INFO: [Synth 8-6157] synthesizing module 'wallace_mul_pipeline1' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:2]
+INFO: [Synth 8-6157] synthesizing module 'booth_4' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'booth_4' (39#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:90]
+INFO: [Synth 8-6157] synthesizing module 'csa4' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'csa4' (40#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:109]
+INFO: [Synth 8-6157] synthesizing module 'csa5' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'csa5' (41#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:127]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_mul_pipeline1' (42#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Arith_Logic_Unit' (43#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Arith_Logic_Unit.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Branch_Unit' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Branch_Unit.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Branch_Unit' (44#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Branch_Unit.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'EX' (45#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/EX.v:23]
+WARNING: [Synth 8-7023] instance 'EXI2' of module 'EX' has 31 connections declared, but only 26 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ExStage.v:192]
+INFO: [Synth 8-6157] synthesizing module 'Div' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Div.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Div' (46#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Div.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ExStage' (47#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ExStage.v:18]
+INFO: [Synth 8-6157] synthesizing module 'MMStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'MMSq' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMSq.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'MMSq' (48#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMSq.v:16]
+INFO: [Synth 8-6157] synthesizing module 'MMCb' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMCb.v:22]
+INFO: [Synth 8-6157] synthesizing module 'wallace_mul_pipeline2' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_mul_pipeline2' (49#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'MMCb' (50#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMCb.v:22]
+WARNING: [Synth 8-7023] instance 'MMCb_item2' of module 'MMCb' has 14 connections declared, but only 10 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMStage.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'MMStage' (51#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMStage.v:17]
+INFO: [Synth 8-6157] synthesizing module 'MemStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MemStage.v:16]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/EX_MEM.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (52#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/EX_MEM.v:17]
+INFO: [Synth 8-6157] synthesizing module 'MEM' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MEM.v:21]
+INFO: [Synth 8-6157] synthesizing module 'wallace_mul_pipeline3' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'wallace_mul_pipeline3' (53#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/wallace_mul.v:70]
+INFO: [Synth 8-226] default block is never used [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MEM.v:283]
+INFO: [Synth 8-6155] done synthesizing module 'MEM' (54#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MEM.v:21]
+WARNING: [Synth 8-7023] instance 'MEMI2' of module 'MEM' has 17 connections declared, but only 11 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MemStage.v:230]
+INFO: [Synth 8-6155] done synthesizing module 'MemStage' (55#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MemStage.v:16]
+INFO: [Synth 8-6157] synthesizing module 'WbStage' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/WbStage.v:16]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MEM_WB.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (56#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MEM_WB.v:16]
+INFO: [Synth 8-6157] synthesizing module 'WB' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/WB.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'WB' (57#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/WB.v:19]
+WARNING: [Synth 8-7023] instance 'WBI2' of module 'WB' has 18 connections declared, but only 13 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/WbStage.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'WbStage' (58#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/WbStage.v:16]
+INFO: [Synth 8-6157] synthesizing module 'Mmu' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Mmu.v:20]
+INFO: [Synth 8-6157] synthesizing module 'tlb' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tlb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TlbGroup' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/TlbGroup.v:25]
+	Parameter TlbSearchLen bound to: 37 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'TlbGroup' (59#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/TlbGroup.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'tlb' (60#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/tlb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mmu' (61#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Mmu.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'Loog' (62#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Loog.v:16]
+INFO: [Synth 8-6157] synthesizing module 'temp_cache' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/temp_cache.v:35]
+	Parameter RIDLE bound to: 8'b00000000 
+	Parameter READ bound to: 8'b00000001 
+	Parameter LOOKUP bound to: 8'b00000010 
+	Parameter WRITE bound to: 8'b00000100 
+	Parameter MISS bound to: 8'b00001000 
+	Parameter WRITEBACK bound to: 8'b00010000 
+	Parameter REPLACE bound to: 8'b00100000 
+	Parameter REFILL bound to: 8'b01000000 
+	Parameter WRITEBLOCK bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'Queue' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:27]
+	Parameter DataLen bound to: 15 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element queue_len_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Queue' (63#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:27]
+INFO: [Synth 8-6157] synthesizing module 'Queue__parameterized0' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:27]
+	Parameter DataLen bound to: 21 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element queue_len_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Queue__parameterized0' (63#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:27]
+WARNING: [Synth 8-7023] instance 'cache_cpu_request_part2_Queue' of module 'Queue' has 9 connections declared, but only 8 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/temp_cache.v:732]
+INFO: [Synth 8-6157] synthesizing module 'Queue__parameterized1' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:27]
+	Parameter DataLen bound to: 35 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element queue_len_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'Queue__parameterized1' (63#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/Queue.v:27]
+WARNING: [Synth 8-7023] instance 'store_buffer_queue' of module 'Queue' has 9 connections declared, but only 8 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/temp_cache.v:751]
+INFO: [Synth 8-6157] synthesizing module 'CacheRdataQueue' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CacheRdataQueue.v:27]
+	Parameter DataLen bound to: 149 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element queue_len_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CacheRdataQueue.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'CacheRdataQueue' (64#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/CacheRdataQueue.v:27]
+INFO: [Synth 8-6157] synthesizing module 'cache_table' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/cache_table.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cache_way' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/cache_way.v:29]
+INFO: [Synth 8-6157] synthesizing module 'tagv_ram' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/tagv_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tagv_ram' (65#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/tagv_ram_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_bank' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/data_bank_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_bank' (66#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/data_bank_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cache_way' (67#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/cache_way.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'cache_table' (68#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/cache_table.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'temp_cache' (69#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/temp_cache.v:35]
+WARNING: [Synth 8-7023] instance 'temp_icache_item' of module 'temp_cache' has 48 connections declared, but only 47 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/mycpu_cache_top.v:257]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_cache_top' (70#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/mycpu_cache_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'simple_sram_aix_bridge' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/simple_sram_aix_bridge.v:38]
+	Parameter REmpty bound to: 2'b00 
+	Parameter RWaitExtAXIAcceptAddr bound to: 2'b01 
+	Parameter RWaitExtAXIData bound to: 2'b10 
+	Parameter WEmpty bound to: 2'b00 
+	Parameter WWaitExtAXIAcceptAddrData bound to: 2'b01 
+	Parameter WWaitExtAXIWriteFnish bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'simple_sram_aix_bridge' (71#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/simple_sram_aix_bridge.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'mycpu_top' (72#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/mycpu_top.v:3]
+WARNING: [Synth 8-7023] instance 'u_cpu' of module 'mycpu_top' has 48 connections declared, but only 43 given [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/soc_lite_top.v:271]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap' (73#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/axi_wrap/axi_wrap.v:34]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_1x2' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_1x2' (74#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/axi_crossbar_1x2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_wrap_ram' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:36]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/axi_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (75#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/.Xil/Vivado-2704060-SY/realtime/axi_ram_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element pf_r2r_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:106]
+WARNING: [Synth 8-6014] Unused sequential element pf_b2b_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'axi_wrap_ram' (76#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/ram_wrap/axi_wrap_ram.v:36]
+INFO: [Synth 8-6157] synthesizing module 'confreg' [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/CONFREG/confreg.v:74]
+	Parameter SIMULATION bound to: 1'b0 
+WARNING: [Synth 8-6014] Unused sequential element buf_len_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/CONFREG/confreg.v:193]
+WARNING: [Synth 8-6014] Unused sequential element buf_size_reg was removed.  [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/CONFREG/confreg.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (77#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/CONFREG/confreg.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'soc_lite_top' (78#1) [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/soc_lite_top.v:67]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlen[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arsize[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arburst[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arburst[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlock[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arlock[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arcache[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port arprot[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlen[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awsize[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awburst[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awburst[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlock[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awlock[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awcache[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port awprot[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port wid[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port wstrb[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arlock[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_arprot[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awlock[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_awprot[0]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[3]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[2]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[1]
+WARNING: [Synth 8-3331] design axi_wrap_ram has unconnected port axi_wid[0]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[167]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[166]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[165]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[164]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[163]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[162]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[161]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[160]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[159]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[158]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[157]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[156]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[155]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[154]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[153]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[152]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[151]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[150]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[149]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[148]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[147]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[146]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[145]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[144]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[143]
+WARNING: [Synth 8-3331] design simple_sram_aix_bridge has unconnected port sram_ibus1[142]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2044.570 ; gain = 346.375 ; free physical = 7272 ; free virtual = 35263
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2059.414 ; gain = 361.219 ; free physical = 7258 ; free virtual = 35249
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2059.414 ; gain = 361.219 ; free physical = 7258 ; free virtual = 35249
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2059.414 ; gain = 0.000 ; free physical = 7202 ; free virtual = 35194
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'pll.clk_pll'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/pht_ram/pht_ram/pht_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Pht_item/pht_ram_item'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/pht_ram/pht_ram/pht_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Pht_item/pht_ram_item'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/tagv_ram_item'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/tagv_ram_item'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/tagv_ram_item'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/tagv_ram_item'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/tagv_ram_item'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/tagv_ram_item'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/tagv_ram_item'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/tagv_ram/tagv_ram/tagv_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/tagv_ram_item'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank0'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank0'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank1'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank1'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank2'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank2'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank3'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank3'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank0'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank0'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank1'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank1'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank2'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank2'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank3'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank3'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank0'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank0'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank1'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank1'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank2'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank2'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank3'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank3'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank0'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank0'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank1'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank1'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank2'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank2'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank3'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/data_bank/data_bank/data_bank_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank3'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2/axi_crossbar_1x2_in_context.xdc] for cell 'u_axi_crossbar_1x2'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/btb_ram/btb_ram/btb_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Btb_item/btb_ram_item'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/ip/btb_ram/btb_ram/btb_ram_in_context.xdc] for cell 'u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Btb_item/btb_ram_item'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/axi_ram/axi_ram/axi_ram_in_context.xdc] for cell 'u_axi_ram/ram'
+Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:5]
+WARNING: [Vivado 12-508] No pins matched 'pll.clk_pll/inst/plle2_adv_inst/CLKOUT1'. [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:126]
+WARNING: [Vivado 12-508] No pins matched 'pll.clk_pll/inst/plle2_adv_inst/CLKOUT0'. [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc:127]
+Finished Parsing XDC File [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/soc_lite_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/constraints/soc_lite_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/soc_lite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/soc_lite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2349.789 ; gain = 0.000 ; free physical = 7011 ; free virtual = 35009
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2349.789 ; gain = 0.000 ; free physical = 7011 ; free virtual = 35009
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'u_axi_crossbar_1x2' at clock pin 'aclk' is different from the actual clock period '20.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2355.727 ; gain = 657.531 ; free physical = 7240 ; free virtual = 35239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2355.727 ; gain = 657.531 ; free physical = 7240 ; free virtual = 35239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/rtl/xilinx_ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for \pll.clk_pll . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Pht_item/pht_ram_item. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/tagv_ram_item. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/tagv_ram_item. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/tagv_ram_item. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/tagv_ram_item. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item0/bank3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_icache_item/cache_table_item/cache_way_item1/bank3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item0/bank3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/temp_dcache_item/cache_table_item/cache_way_item1/bank3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_crossbar_1x2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_cpu/mycpu_cache_item/cpu/Predactor_item/Predactor_Btb_item/btb_ram_item. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_axi_ram/ram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2355.727 ; gain = 657.531 ; free physical = 7236 ; free virtual = 35235
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ce_cs_reg' in module 'CdoSq'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'confreg'
+INFO: [Synth 8-5544] ROM "num_csn" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "num_a_g" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   Reset |                              001 |                               00
+                  Clear2 |                              010 |                               10
+                  Clear1 |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ce_cs_reg' using encoding 'one-hot' in module 'CdoSq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                           000001 |                              000
+                  iSTATE |                           100000 |                              001
+                 iSTATE0 |                           010000 |                              010
+                 iSTATE1 |                           001000 |                              011
+                 iSTATE2 |                           000100 |                              100
+                 iSTATE3 |                           000010 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'confreg'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2355.727 ; gain = 657.531 ; free physical = 7182 ; free virtual = 35185
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |EX                     |           2|     16732|
+|2     |ExStage__GC0           |           1|      4308|
+|3     |Loog__GCB0             |           1|     36447|
+|4     |Loog__GCB1             |           1|     18008|
+|5     |Loog__GCB2             |           1|     38843|
+|6     |mycpu_cache_top__GC0   |           1|     27815|
+|7     |simple_sram_aix_bridge |           1|       651|
+|8     |soc_lite_top__GC0      |           1|      4619|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register now_data_reg_reg [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ID_EX.v:55]
+INFO: [Synth 8-3538] Detected potentially large (wide) register to_now_obus_reg [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/EX_MEM.v:61]
+INFO: [Synth 8-3538] Detected potentially large (wide) register to_now_obus_reg [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMSq.v:55]
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 12    
+	   2 Input      3 Bit       Adders := 22    
+	   2 Input      2 Bit       Adders := 7     
+	   3 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   4 Input     64 Bit         XORs := 10    
+	   2 Input     64 Bit         XORs := 20    
+	   3 Input     64 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	             1918 Bit    Registers := 1     
+	             1524 Bit    Registers := 1     
+	             1106 Bit    Registers := 1     
+	              946 Bit    Registers := 1     
+	              242 Bit    Registers := 1     
+	              189 Bit    Registers := 16    
+	              150 Bit    Registers := 32    
+	              145 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               36 Bit    Registers := 17    
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 102   
+	               23 Bit    Registers := 2     
+	               22 Bit    Registers := 18    
+	               20 Bit    Registers := 66    
+	               19 Bit    Registers := 32    
+	               16 Bit    Registers := 17    
+	               10 Bit    Registers := 32    
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 33    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 18    
+	                2 Bit    Registers := 135   
+	                1 Bit    Registers := 367   
++---RAMs : 
+	              256 Bit         RAMs := 4     
++---Muxes : 
+	   2 Input    189 Bit        Muxes := 16    
+	   2 Input    150 Bit        Muxes := 32    
+	   2 Input    128 Bit        Muxes := 4     
+	   2 Input    118 Bit        Muxes := 2     
+	   2 Input     89 Bit        Muxes := 3     
+	   5 Input     76 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 77    
+	   3 Input     64 Bit        Muxes := 34    
+	   2 Input     55 Bit        Muxes := 1     
+	  71 Input     51 Bit        Muxes := 2     
+	   2 Input     45 Bit        Muxes := 32    
+	   2 Input     36 Bit        Muxes := 29    
+	   2 Input     34 Bit        Muxes := 2     
+	   2 Input     33 Bit        Muxes := 8     
+	  19 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 214   
+	   4 Input     32 Bit        Muxes := 11    
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 6     
+	   2 Input     26 Bit        Muxes := 3     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 20    
+	   2 Input     20 Bit        Muxes := 9     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 31    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	  18 Input     15 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 7     
+	   5 Input      8 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 15    
+	   3 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 2     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   5 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 4     
+	  57 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 3     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 6     
+	   2 Input      3 Bit        Muxes := 23    
+	   6 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 44    
+	   2 Input      2 Bit        Muxes := 47    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 752   
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register now_data_reg_reg [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/ID_EX.v:55]
+INFO: [Synth 8-3538] Detected potentially large (wide) register to_now_obus_reg [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/EX_MEM.v:61]
+INFO: [Synth 8-3538] Detected potentially large (wide) register to_now_obus_reg [/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.srcs/sources_1/imports/mycpu/MMSq.v:55]
+Hierarchical RTL Component report 
+Module soc_lite_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module booth_4__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module booth_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+Module csa4__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module csa5__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 2     
+	   3 Input     64 Bit         XORs := 2     
+Module csa4__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module csa5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 2     
+	   3 Input     64 Bit         XORs := 2     
+Module wallace_mul_pipeline1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+Module Arith_Logic_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Muxes : 
+	  19 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Branch_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module EX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	             1106 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module Div 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 7     
+Module ExStage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     76 Bit        Muxes := 1     
+Module MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	              946 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module WB__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  18 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module WB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	  18 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module WbStage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    118 Bit        Muxes := 2     
+Module CdoSq__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module CdoCb__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module EX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	             1524 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module csa4__7 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module wallace_mul_pipeline3__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+Module MEM__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module csa4 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module wallace_mul_pipeline3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+Module MEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MemStage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MMSq 
+Detailed RTL Component Info : 
++---Registers : 
+	             1918 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module csa4__6 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module csa4__5 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module csa4__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module csa4__4 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
+Module Reg_File 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 86    
+	   2 Input      1 Bit        Muxes := 192   
+Module Csr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 31    
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 43    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 6     
+	   2 Input     26 Bit        Muxes := 3     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 5     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 32    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 50    
+Module IF_ID 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	              189 Bit    Registers := 16    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input    189 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 87    
+Module ID__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ID 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Lanuch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module IdSq 
+Detailed RTL Component Info : 
++---Registers : 
+	              242 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module IndetifyInstType__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  71 Input     51 Bit        Muxes := 1     
+	  57 Input      5 Bit        Muxes := 1     
+Module IdCb__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module IndetifyInstType 
+Detailed RTL Component Info : 
++---Muxes : 
+	  71 Input     51 Bit        Muxes := 1     
+	  57 Input      5 Bit        Muxes := 1     
+Module IdCb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module IdStage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+Module CdoSq 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module CdoCb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module IfTSq 
+Detailed RTL Component Info : 
++---Registers : 
+	              145 Bit    Registers := 1     
+	               65 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module IfTCb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module IfTStage 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Preif_IF 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
+Module IF 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+Module IfStage 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module Predactor_PUC 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 33    
+Module Predactor_Pht 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module Predactor_Btb 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     55 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 3     
+Module Predactor 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PreIF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module TlbGroup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 16    
+	               19 Bit    Registers := 8     
+	               10 Bit    Registers := 8     
+	                6 Bit    Registers := 8     
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 8     
+Module TlbGroup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 16    
+	               19 Bit    Registers := 8     
+	               10 Bit    Registers := 8     
+	                6 Bit    Registers := 8     
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 8     
+Module TlbGroup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 16    
+	               19 Bit    Registers := 8     
+	               10 Bit    Registers := 8     
+	                6 Bit    Registers := 8     
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 8     
+Module TlbGroup 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 16    
+	               19 Bit    Registers := 8     
+	               10 Bit    Registers := 8     
+	                6 Bit    Registers := 8     
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+	   6 Input      1 Bit        Muxes := 8     
+Module tlb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     89 Bit        Muxes := 3     
+Module Mmu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+Module PreifReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               33 Bit    Registers := 1     
+Module Queue 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+Module Queue__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+Module Queue__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               36 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+Module CacheRdataQueue 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	              150 Bit    Registers := 16    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    150 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 40    
+Module cache_way__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+Module cache_way__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+Module cache_table__xdcDup__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module temp_cache__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module Queue__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+Module Queue__parameterized0__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+Module Queue__parameterized1__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               36 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 16    
+Module CacheRdataQueue__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	              150 Bit    Registers := 16    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    150 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 40    
+Module cache_way__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+Module cache_way 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     45 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+Module cache_table 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module temp_cache 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module mycpu_cache_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 4     
+Module simple_sram_aix_bridge 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
+	   3 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_wrap 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+Module axi_wrap_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module confreg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 21    
+	               23 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	   6 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 10    
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/write_count_max_reg[0]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/write_count_max_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awsize_o_reg[0]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awsize_o_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/simple_sram_axi_bridge_item /\reg_axi_awsize_o_reg[2] )
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[0]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[2]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[3]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[4]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[5]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[6]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_awlen_o_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/simple_sram_axi_bridge_item /\reg_axi_awlen_o_reg[7] )
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arsize_o_reg[0]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arsize_o_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/simple_sram_axi_bridge_item /\reg_axi_arsize_o_reg[2] )
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[0]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[2]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[3]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[4]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[5]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[6]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arlen_o_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/simple_sram_axi_bridge_item /\reg_axi_arlen_o_reg[7] )
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arid_o_reg[1]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arid_o_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arid_o_reg[2]' (FDRE) to 'u_cpu/simple_sram_axi_bridge_item/reg_axi_arid_o_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cpu/simple_sram_axi_bridge_item /\reg_axi_arid_o_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[1]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[2]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[3]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[4]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[5]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[6]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[7]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[8]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[9]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[10]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[11]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[12]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[13]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[14]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[15]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[16]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[17]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[18]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[19]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[20]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[21]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[22]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[23]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[24]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[25]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[26]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[27]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[28]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[29]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[30]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[31]'
+INFO: [Synth 8-3886] merging instance 'i_0/u_confreg/simu_flag_reg[31]' (FDRE) to 'i_0/u_confreg/simu_flag_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u_confreg/simu_flag_reg[0] )
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[461] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[460] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[459] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[458] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[103] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[102] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[101] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB0 has port wb_diiff_obus[100] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1092] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1093] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1094] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1095] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1096] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1097] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1098] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1099] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1102] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1104] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1105] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1106] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1107] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1108] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1109] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1110] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[1111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[968] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[958] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[957] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[955] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/to_now_obus_reg[954] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MemStageI/\EXMEMI/cache_buffer_reg[32] )
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[153]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[439]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[154]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[440]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[155]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[441]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[156]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[442]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[157]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[443]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[158]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[444]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[159]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[445]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[160]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[446]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[161]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[447]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[162]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[448]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[163]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[449]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[164]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[450]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[626]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[912]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[627]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[913]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[628]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[914]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[629]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[915]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[630]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[916]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[631]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[917]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[632]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[918]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[633]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[919]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[634]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[920]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[635]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[921]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[636]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[922]'
+INFO: [Synth 8-3886] merging instance 'WbStageI/MEMWBI/to_now_obus_reg[637]' (FDRE) to 'WbStageI/MEMWBI/to_now_obus_reg[923]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/ticlr_reg_reg[0]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/cpuid_reg_reg[0]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdh_reg_reg[0]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdl_reg_reg[0]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/tlbehi_reg_reg[0]' (FDE) to 'RFI/CsrI/tlbehi_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/eentry_reg_reg[0]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/ticlr_reg_reg[1]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/cpuid_reg_reg[1]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdh_reg_reg[1]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdl_reg_reg[1]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/tlbehi_reg_reg[1]' (FDE) to 'RFI/CsrI/tlbehi_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/eentry_reg_reg[1]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/euen_reg_reg[1]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/ticlr_reg_reg[2]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/cpuid_reg_reg[2]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdh_reg_reg[2]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdl_reg_reg[2]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/tlbehi_reg_reg[2]' (FDE) to 'RFI/CsrI/tlbehi_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/eentry_reg_reg[2]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/euen_reg_reg[2]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/ticlr_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/cpuid_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdh_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/pgdl_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/tlbehi_reg_reg[3]' (FDE) to 'RFI/CsrI/tlbehi_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/eentry_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/euen_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RFI/CsrI/prmd_reg_reg[3]' (FDRE) to 'RFI/CsrI/cpuid_reg_reg[4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\RFI/CsrI /\asid_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RFI/CsrI /\estat_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RFI/CsrI /\crmd_reg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RFI/CsrI /\prmd_reg_reg[31] )
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[1040] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[1039] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[1032] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[1031] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[1030] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[1029] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[950] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[949] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[796] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[795] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[794] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[793] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[792] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[791] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[790] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[789] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[788] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[787] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[786] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[785] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[784] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[783] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[782] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[781] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[780] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[779] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[778] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[777] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[776] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[775] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[774] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[773] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[772] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[771] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[770] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[769] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[768] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[767] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[766] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[765] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[487] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[486] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[479] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[478] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[477] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[476] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[397] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[396] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[243] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[242] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[241] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[240] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[239] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[238] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[237] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[236] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[235] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[234] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[233] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[232] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[231] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[230] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[229] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[228] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[227] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[226] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[225] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[224] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[223] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[222] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[221] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[220] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[219] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[218] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[217] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[216] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[215] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[214] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[213] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB1 has port to_next_obus[212] driven by constant 0
+WARNING: [Synth 8-3917] design Loog__GCB2 has port error_o driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IfStageI/Preif_IFI/line2_excep_type_o_reg[19] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp_icache_item/\r_cs_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:11 . Memory (MB): peak = 2355.727 ; gain = 657.531 ; free physical = 4129 ; free virtual = 32192
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------+--------------------------------------------+-----------+----------------------+----------------+
+|Module Name      | RTL Object                                 | Inference | Size (Depth x Width) | Primitives     | 
++-----------------+--------------------------------------------+-----------+----------------------+----------------+
+|temp_icache_item | cache_table_item/cache_way_item0/d_reg_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
+|temp_icache_item | cache_table_item/cache_way_item1/d_reg_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
+|temp_dcache_item | cache_table_item/cache_way_item0/d_reg_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
+|temp_dcache_item | cache_table_item/cache_way_item1/d_reg_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
++-----------------+--------------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |EX                     |           2|      9022|
+|2     |ExStage__GC0           |           1|      3348|
+|3     |Loog__GCB0             |           1|     27670|
+|4     |Loog__GCB1             |           1|     16970|
+|5     |Loog__GCB2             |           1|     23852|
+|6     |mycpu_cache_top__GC0   |           1|     33477|
+|7     |simple_sram_aix_bridge |           1|       583|
+|8     |soc_lite_top__GC0      |           1|      3278|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 2355.727 ; gain = 657.531 ; free physical = 4018 ; free virtual = 32126
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[765] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[637] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[638] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[445] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[573] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[639] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[701] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[766] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[829] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[446] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[574] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[640] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[702] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[767] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[830] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[447] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[575] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[641] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[703] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[768] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[448] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[576] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[642] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[704] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[769] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[449] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[577] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[643] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[705] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/MMStage_item/\MMSq_item/to_now_obus_reg[770] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:02:29 . Memory (MB): peak = 2674.578 ; gain = 976.383 ; free physical = 4031 ; free virtual = 32160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-----------------+--------------------------------------------+-----------+----------------------+----------------+
+|Module Name      | RTL Object                                 | Inference | Size (Depth x Width) | Primitives     | 
++-----------------+--------------------------------------------+-----------+----------------------+----------------+
+|temp_dcache_item | cache_table_item/cache_way_item0/d_reg_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
+|temp_dcache_item | cache_table_item/cache_way_item1/d_reg_reg | Implied   | 256 x 1              | RAM128X1D x 2	 | 
++-----------------+--------------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |EX                     |           1|      9062|
+|2     |Loog__GCB2             |           1|     23830|
+|3     |simple_sram_aix_bridge |           1|       575|
+|4     |soc_lite_top__GC0      |           1|      3278|
+|5     |EX__1                  |           1|      8985|
+|6     |Reg_File               |           1|     10516|
+|7     |soc_lite_top_GT0       |           1|     17485|
+|8     |IF_ID                  |           1|      9546|
+|9     |soc_lite_top_GT2       |           1|     37386|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+WARNING: [Synth 8-565] redefining clock 'clk'
+WARNING: [Synth 8-565] redefining clock 'clk'
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:05 ; elapsed = 00:02:41 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3495 ; free virtual = 31622
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |EX                     |           1|      2266|
+|2     |Loog__GCB2             |           1|      9842|
+|3     |simple_sram_aix_bridge |           1|       312|
+|4     |soc_lite_top__GC0      |           1|      1957|
+|5     |EX__1                  |           1|      2199|
+|6     |Reg_File               |           1|      5102|
+|7     |soc_lite_top_GT0       |           1|      8390|
+|8     |IF_ID                  |           1|      6936|
+|9     |soc_lite_top_GT2       |           1|     17082|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:11 ; elapsed = 00:02:48 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3636 ; free virtual = 31869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:11 ; elapsed = 00:02:48 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3636 ; free virtual = 31870
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:16 ; elapsed = 00:02:53 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3628 ; free virtual = 31869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:16 ; elapsed = 00:02:53 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3628 ; free virtual = 31869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:17 ; elapsed = 00:02:55 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3626 ; free virtual = 31868
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:18 ; elapsed = 00:02:55 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3626 ; free virtual = 31868
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_pll          |         1|
+|2     |axi_crossbar_1x2 |         1|
+|3     |axi_ram          |         1|
+|4     |btb_ram          |         1|
+|5     |pht_ram          |         1|
+|6     |tagv_ram         |         4|
+|7     |data_bank        |        16|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |axi_crossbar_1x2 |     1|
+|2     |axi_ram          |     1|
+|3     |btb_ram          |     1|
+|4     |clk_pll          |     1|
+|5     |data_bank        |     1|
+|6     |data_bank__16    |     1|
+|7     |data_bank__17    |     1|
+|8     |data_bank__18    |     1|
+|9     |data_bank__19    |     1|
+|10    |data_bank__20    |     1|
+|11    |data_bank__21    |     1|
+|12    |data_bank__22    |     1|
+|13    |data_bank__23    |     1|
+|14    |data_bank__24    |     1|
+|15    |data_bank__25    |     1|
+|16    |data_bank__26    |     1|
+|17    |data_bank__27    |     1|
+|18    |data_bank__28    |     1|
+|19    |data_bank__29    |     1|
+|20    |data_bank__30    |     1|
+|21    |pht_ram          |     1|
+|22    |tagv_ram         |     1|
+|23    |tagv_ram__4      |     1|
+|24    |tagv_ram__5      |     1|
+|25    |tagv_ram__6      |     1|
+|26    |CARRY4           |   732|
+|27    |LUT1             |   221|
+|28    |LUT2             |  1480|
+|29    |LUT3             |  3767|
+|30    |LUT4             |  4602|
+|31    |LUT5             |  8653|
+|32    |LUT6             | 12807|
+|33    |MUXF7            |  2099|
+|34    |MUXF8            |   646|
+|35    |RAM128X1D        |     4|
+|36    |FDRE             | 18040|
+|37    |FDSE             |   170|
+|38    |IBUF             |    15|
+|39    |OBUF             |    71|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+------------------------+------+
+|      |Instance                               |Module                  |Cells |
++------+---------------------------------------+------------------------+------+
+|1     |top                                    |                        | 54386|
+|2     |  u_axi_ram                            |axi_wrap_ram            |   142|
+|3     |  u_confreg                            |confreg                 |  1399|
+|4     |  u_cpu                                |mycpu_top               | 52378|
+|5     |    mycpu_cache_item                   |mycpu_cache_top         | 52078|
+|6     |      cpu                              |Loog                    | 36458|
+|7     |        DRI                            |Data_Relevant           |   434|
+|8     |        ExStageI                       |ExStage                 |  6478|
+|9     |          Div_item                     |Div                     |   568|
+|10    |          EXI1                         |EX                      |   432|
+|11    |            ALU                        |Arith_Logic_Unit_15     |    16|
+|12    |            Branch_Unit_item           |Branch_Unit_16          |    51|
+|13    |          EXI2                         |EX_14                   |   430|
+|14    |            ALU                        |Arith_Logic_Unit        |    16|
+|15    |            Branch_Unit_item           |Branch_Unit             |    51|
+|16    |          IDEXI                        |ID_EX                   |  5048|
+|17    |        IdStage_item                   |IdStage                 |  2942|
+|18    |          IdCb_item1                   |IdCb                    |    21|
+|19    |          IdCb_item2                   |IdCb_13                 |    21|
+|20    |          IdSq_item                    |IdSq                    |  2900|
+|21    |        IfStageI                       |IfStage                 |   448|
+|22    |          Preif_IFI                    |Preif_IF                |   448|
+|23    |        IfTStage_item                  |IfTStage                |   427|
+|24    |          Cdo_item                     |Cdo_11                  |    82|
+|25    |            CdoSq_it                   |CdoSq_12                |    82|
+|26    |          IfTSq_item                   |IfTSq                   |   345|
+|27    |        LanuchI                        |Lanuch                  |  5168|
+|28    |          IDI1                         |ID                      |     8|
+|29    |          IDI2                         |ID_10                   |     8|
+|30    |          IFIDI                        |IF_ID                   |  5152|
+|31    |        MMStage_item                   |MMStage                 |  2167|
+|32    |          MMCb_item1                   |MMCb                    |    16|
+|33    |          MMCb_item2                   |MMCb_9                  |    12|
+|34    |          MMSq_item                    |MMSq                    |  2139|
+|35    |        MemStageI                      |MemStage                |  1727|
+|36    |          Cdo_item                     |Cdo                     |     8|
+|37    |            CdoSq_it                   |CdoSq                   |     8|
+|38    |          EXMEMI                       |EX_MEM                  |  1687|
+|39    |          MEMI1                        |MEM                     |    16|
+|40    |            wallace_mul_pipeline3_item |wallace_mul_pipeline3_8 |    16|
+|41    |          MEMI2                        |MEM_7                   |    16|
+|42    |            wallace_mul_pipeline3_item |wallace_mul_pipeline3   |    16|
+|43    |        Mmu_item                       |Mmu                     |  6926|
+|44    |          tlb_item                     |tlb                     |  6827|
+|45    |            TlbGroup_item0             |TlbGroup                |  1766|
+|46    |            TlbGroup_item1             |TlbGroup_4              |  1669|
+|47    |            TlbGroup_item2             |TlbGroup_5              |  1684|
+|48    |            TlbGroup_item3             |TlbGroup_6              |  1676|
+|49    |        PcBuffer_item                  |PreifReg                |    38|
+|50    |        PreIFI                         |PreIF                   |    16|
+|51    |        Predactor_PUC_item             |Predactor_PUC           |    46|
+|52    |        Predactor_item                 |Predactor               |   209|
+|53    |          Predactor_Btb_item           |Predactor_Btb           |   198|
+|54    |          Predactor_Pht_item           |Predactor_Pht           |    10|
+|55    |        RFI                            |Reg_File_Box            |  6577|
+|56    |          CountRegI                    |CountReg                |    81|
+|57    |          CsrI                         |Csr                     |  1366|
+|58    |          RFI                          |Reg_File                |  5129|
+|59    |        WbStageI                       |WbStage                 |  2851|
+|60    |          MEMWBI                       |MEM_WB                  |  2771|
+|61    |          WBI1                         |WB                      |    40|
+|62    |          WBI2                         |WB_3                    |    40|
+|63    |      temp_dcache_item                 |temp_cache              |  8301|
+|64    |        cache_cpu_request_part1_Queue  |Queue_0                 |   641|
+|65    |        cache_cpu_request_part2_Queue  |Queue__parameterized0_1 |   502|
+|66    |        cache_read_queue               |CacheRdataQueue_2       |  5893|
+|67    |        cache_table_item               |cache_table             |   404|
+|68    |          cache_way_item0              |cache_way__xdcDup__3    |   153|
+|69    |          cache_way_item1              |cache_way               |   251|
+|70    |        store_buffer_queue             |Queue__parameterized1   |   704|
+|71    |      temp_icache_item                 |temp_cache__xdcDup__1   |  7319|
+|72    |        cache_cpu_request_part1_Queue  |Queue                   |   524|
+|73    |        cache_cpu_request_part2_Queue  |Queue__parameterized0   |   469|
+|74    |        cache_read_queue               |CacheRdataQueue         |  5819|
+|75    |        cache_table_item               |cache_table__xdcDup__1  |   319|
+|76    |          cache_way_item0              |cache_way__xdcDup__1    |   160|
+|77    |          cache_way_item1              |cache_way__xdcDup__2    |   159|
+|78    |    simple_sram_axi_bridge_item        |simple_sram_aix_bridge  |   300|
++------+---------------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:18 ; elapsed = 00:02:55 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 3626 ; free virtual = 31868
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 300 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:12 ; elapsed = 00:02:50 . Memory (MB): peak = 2686.504 ; gain = 691.996 ; free physical = 7439 ; free virtual = 35681
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:56 . Memory (MB): peak = 2686.504 ; gain = 988.309 ; free physical = 7453 ; free virtual = 35685
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2686.504 ; gain = 0.000 ; free physical = 7457 ; free virtual = 35689
+INFO: [Netlist 29-17] Analyzing 3481 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.605 ; gain = 0.000 ; free physical = 7410 ; free virtual = 35634
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+393 Infos, 219 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:26 ; elapsed = 00:03:06 . Memory (MB): peak = 2730.605 ; gain = 1290.215 ; free physical = 7589 ; free virtual = 35809
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2730.605 ; gain = 0.000 ; free physical = 7589 ; free virtual = 35809
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1/soc_lite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file soc_lite_top_utilization_synth.rpt -pb soc_lite_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  5 14:22:56 2023...

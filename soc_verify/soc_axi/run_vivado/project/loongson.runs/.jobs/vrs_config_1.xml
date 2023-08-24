@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_pll_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/clk_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="pht_ram_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/pht_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tagv_ram_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/tagv_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="data_bank_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/data_bank_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_crossbar_1x2_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/axi_crossbar_1x2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="btb_ram_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/btb_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="axi_ram_synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/axi_ram_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="clk_pll_synth_1"/>
+		<Parent Id="pht_ram_synth_1"/>
+		<Parent Id="tagv_ram_synth_1"/>
+		<Parent Id="data_bank_synth_1"/>
+		<Parent Id="axi_crossbar_1x2_synth_1"/>
+		<Parent Id="btb_ram_synth_1"/>
+		<Parent Id="axi_ram_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/sun/Vivado2019/nscscc/func-submit/soc_verify/soc_axi/run_vivado/project/loongson.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="clk_pll_synth_1"/>
+		<Parent Id="pht_ram_synth_1"/>
+		<Parent Id="tagv_ram_synth_1"/>
+		<Parent Id="data_bank_synth_1"/>
+		<Parent Id="axi_crossbar_1x2_synth_1"/>
+		<Parent Id="btb_ram_synth_1"/>
+		<Parent Id="axi_ram_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

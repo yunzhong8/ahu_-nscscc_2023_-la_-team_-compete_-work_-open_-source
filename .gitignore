@@ -1,0 +1,11 @@
+
+git rm --cached -r ./soc_verify/soc_axi/run_vivado/project/loongson.cache
+git rm --cached -r ./soc_verify/soc_axi/run_vivado/project/loongson.sim
+
+soc_verify/soc_axi/run_vivado/project/loongson.cache/
+soc_verify/soc_axi/run_vivado/project/loongson.sim/
+
+
+git rm --cached -r ./soc_verify/soc_axi/run_vivado/project/loongson.run
+soc_verify/soc_axi/run_vivado/project/loongson.run/
+

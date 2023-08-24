@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1691216168">
+  <File Type="RDS-UTIL-PB" Name="soc_lite_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="soc_lite_top_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="soc_lite_top.vds"/>
+  <File Type="RDS-DCP" Name="soc_lite_top.dcp"/>
+  <File Type="PA-TCL" Name="soc_lite_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="soc_lite_top_reports.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineError.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineError.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineConfg.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineConfg.h"/>
+        <Attr Name="ImportTime" Val="1691215779"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/define.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/define.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineSignLocation.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineSignLocation.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineTestConfg.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineTestConfg.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineLoogLenWidth.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineLoogLenWidth.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineModuleBus.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineModuleBus.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineCache.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineCache.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineExcepSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineExcepSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineCsrAddr.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineCsrAddr.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineMemSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineMemSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineAluOp.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineAluOp.h"/>
+        <Attr Name="ImportTime" Val="1691206181"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineInstSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineInstSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineIdSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineIdSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineExSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineExSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineWbSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineWbSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/DefineBJSign.h">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/DefineBJSign.h"/>
+        <Attr Name="ImportTime" Val="1691196459"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Arith_Logic_Unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Arith_Logic_Unit.v"/>
+        <Attr Name="ImportTime" Val="1691209843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Branch_Unit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Branch_Unit.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/CacheRdataQueue.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/CacheRdataQueue.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Cdo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Cdo.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/CdoCb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/CdoCb.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/CdoSq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/CdoSq.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/CountReg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/CountReg.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Csr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Csr.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Data_Relevant.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Data_Relevant.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Div.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Div.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/EX.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/EX_MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/EX_MEM.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Error.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Error.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/ExStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/ExStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/ID.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/ID_EX.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/ID_EX.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IF.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IF_ID.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IF_ID.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IdCb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IdCb.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IdSq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IdSq.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IdStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IdStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IfStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IfStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IfTCb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IfTCb.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IfTSq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IfTSq.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IfTStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IfTStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/IndetifyInstType.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/IndetifyInstType.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Lanuch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Lanuch.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Loog.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Loog.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/MEM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/MEM.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/MEM_WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/MEM_WB.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/MMCb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/MMCb.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/MMSq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/MMSq.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/MMStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/MMStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/MemStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/MemStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Mmu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Mmu.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/OpDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/OpDecoder.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/PreIF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/PreIF.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Predactor.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Predactor.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Predactor_Btb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Predactor_Btb.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Predactor_PUC.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Predactor_PUC.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Predactor_Pht.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Predactor_Pht.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/PreifReg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/PreifReg.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Preif_IF.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Preif_IF.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Queue.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Queue.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Reg_File.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Reg_File.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/Reg_File_Box.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/Reg_File_Box.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/SignProduce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/SignProduce.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/TlbGroup.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/TlbGroup.v"/>
+        <Attr Name="ImportTime" Val="1691209776"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/WB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/WB.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/WbStage.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/WbStage.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/axi_wrap/axi_wrap.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/ram_wrap/axi_wrap_ram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/cache_table.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/cache_table.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/cache_way.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/cache_way.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/CONFREG/confreg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/mycpu_cache_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/mycpu_cache_top.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/mycpu_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/mycpu_top.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/simple_sram_aix_bridge.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/simple_sram_aix_bridge.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/temp_cache.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/temp_cache.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/tlb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/tlb.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/tools.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/tools.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/wallace_mul.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/wallace_mul.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../rtl/soc_lite_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../func/obj/inst_ram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/diff_bridge.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/diff_bridge.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/diff_cache.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/diff_cache.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/mycpu/diff.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../ahu-nscscc2023-submit/LoongArch_AHU_1_zhengzhongqiang/src/mycpu/diff.v"/>
+        <Attr Name="ImportTime" Val="1691196466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="soc_lite_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../constraints/soc_lite_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="pht_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="tagv_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="data_bank"/>
+  <BlockFileSet Type="BlockSrcs" Name="axi_crossbar_1x2"/>
+  <BlockFileSet Type="BlockSrcs" Name="btb_ram"/>
+</GenRun>
