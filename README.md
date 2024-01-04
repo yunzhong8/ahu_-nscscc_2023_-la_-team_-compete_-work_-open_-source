@@ -2,6 +2,7 @@
 
 #### 介绍
 开源作品
+代码文件所在路径·： ahu_-nscscc_2023_-la_-team_-compete_-work_-open_-source/ soc_verify / soc_axi / run_vivado / project / loongson.srcs / sources_1 / imports / mycpu
 
 #### 软件架构
 软件架构说明
